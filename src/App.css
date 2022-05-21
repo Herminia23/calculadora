@@ -1,0 +1,81 @@
+*, *:before, *:after{
+  box-sizing: border-style,
+}
+
+body {
+  background: linear-gradient(to right, #474747, #3a3b3a);
+
+}
+
+.App{
+  height: 50vh;
+  width: 25%;
+}
+
+.calculadoraHostorial{
+  font-size: 25px;
+  margin-left: -10px;
+  font-weight: bold;
+  background-color: #071f16;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+
+}
+.calculadora-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 10vh;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: 75px repeat(6,65px);
+  border-radius: 25px;
+  box-shadow: 15px 15px 15px 15px #020000 ;
+}
+
+.calculadora-grid > button {
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(242, 252, 253);
+  border: 2.5px solid rgb(1, 1, 8);
+  outline: none;
+  background-color: #000806;
+  margin: 1px;
+}
+
+.calculadora-grid > button:double {
+  background-color: #071f16;
+}
+
+.span-two{
+  grid-column: span 2;
+}
+
+.output{
+  grid-column: 1 / -2;
+  margin-bottom: 0.5rem;
+  background-color: rgba(24, 48, 125, 0.425);
+  display:flex;
+  align-items:flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 2.5px;
+  word-wrap: break-word;
+  word-break: break-all;
+
+}
+
+.output .previous-operand{
+  color: #86575790;
+  font-size: 2.0rem;
+}
+
+.output .current-operand{
+  color: #0300008f;
+  font-size: 2.0rem;
+}
+
